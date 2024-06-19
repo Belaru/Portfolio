@@ -1,0 +1,50 @@
+body{
+    background-color: antiquewhite;
+    font-size: 1.5em;
+}
+
+#to-form{
+    color:blueviolet;
+    border: black solid;
+    background-color: burlywood;
+    padding:1%;
+    width: fit-content;
+}
+
+form{
+    margin-top: 5%;
+    border: 3px red solid;
+    border-radius: 25%;
+    padding:2%;
+    background-color: bisque;
+    width: fit-content;
+}
+
+input,label{
+    height: 2em;
+}
+
+#button:hover{
+    background-color: red;
+    color:white;
+}
+
+li:hover{
+    background-color: aquamarine;
+    border:black solid;
+    border-radius: 10%;
+    font-weight: bold;
+    width: fit-content;
+}
+
+a:link { text-decoration: none;color: black;}
+
+a:visited, a:active  {
+    color: black;
+ } 
+
+#error-report{
+    color:red;
+    font-weight: bold;
+}
+

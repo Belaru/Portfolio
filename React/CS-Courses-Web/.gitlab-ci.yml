@@ -1,0 +1,35 @@
+image: node:18.18-bullseye-slim
+
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+stages:
+  - lint
+  - build
+  - bundlesize
+
+lint:
+  stage: lint 
+  script:
+    - npm install -g eslint
+    - eslint --config .eslintrc.json --ext js,mjs .
+  allow_failure: false
+
+build-app:
+  stage: build
+  script:
+    - npm install
+    - npm run build
+  allow_failure: false
+
+bundlesize:
+  stage: bundlesize
+  before_script:
+    - npm install -g bundlesize2
+    - npm install webpack webpack-cli --save-dev
+    - npm run build
+  script:
+    - npm run bundlesize
+  allow_failure: false

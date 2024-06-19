@@ -1,0 +1,24 @@
+workflow:
+  rules:
+    - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+    - if: $CI_COMMIT_TAG
+    - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+
+lint-js:
+  image: node
+  stage: test
+  before_script:
+    - npm install -g eslint
+  script:
+    - eslint --ext .js .
+
+lint-html-css:
+  image: node
+  stage: test
+  before_script:
+    - npm install -g stylelint stylelint-config-standard htmlhint 
+    - 'echo {\"extends\": \"stylelint-config-standard\"} > .stylelintrc'
+  script:
+    - htmlhint "**/*.html" || exit_code=$?
+    - if [ $exit_code -ne 0 ]; then echo "HTML check failed"; fi;
+    - stylelint **/*.css

@@ -1,0 +1,21 @@
+{
+  "name": "a4-2023-metro-map",
+  "version": "1.0.0",
+  "description": "Map of STM metro data",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "cd server && node server/server.js",
+    "build": "cd metro-map-client && npm install && npm run build && cd ../server && npm install"
+  },
+  "author": "Maja Frydrychowicz",
+  "license": "ISC",
+  "dependencies": {
+    "leaflet": "^1.9.4",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/leaflet": "^1.9.6"
+  }
+}

@@ -1,0 +1,5 @@
+C:\Users\Anastasia\Documents\Programming 4\DependancyInjection-Lab\obj\Debug\net6.0\DependancyInjection-Lab.csproj.AssemblyReference.cache
+C:\Users\Anastasia\Documents\Programming 4\DependancyInjection-Lab\obj\Debug\net6.0\DependancyInjection-Lab.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Anastasia\Documents\Programming 4\DependancyInjection-Lab\obj\Debug\net6.0\DependancyInjection-Lab.AssemblyInfoInputs.cache
+C:\Users\Anastasia\Documents\Programming 4\DependancyInjection-Lab\obj\Debug\net6.0\DependancyInjection-Lab.AssemblyInfo.cs
+C:\Users\Anastasia\Documents\Programming 4\DependancyInjection-Lab\obj\Debug\net6.0\DependancyInjection-Lab.csproj.CoreCompileInputs.cache

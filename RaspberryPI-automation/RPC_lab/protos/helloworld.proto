@@ -1,0 +1,57 @@
+/*
+Example from https://github.com/grpc/grpc/tree/master/examples/python
+*/
+
+syntax = "proto3";
+
+//You can add option declarations. Options may affect in a particular context
+//Some examples below, ignored if not handled by Python
+option java_multiple_files = true;                    //For Java
+option java_package = "io.grpc.examples.helloworld";  //For Java
+option java_outer_classname = "HelloWorldProto";      //For Java
+option objc_class_prefix = "HLW";                     //For Objective-C (Recommended by Apple)
+
+//You can add an optional package specifier to prevent name clashes. 
+//It is ignored in Python because Python modules are organized according to their location in the file system
+package example;  
+
+// The greeting service definition.
+service Greeter {
+  // Sends a greeting
+  rpc SayHello (HelloRequest) returns (HelloReply) {}
+
+}
+
+// The request message containing the user's name, and other variables.
+//It contains unique fields number numbers between 1 and 536,870,911 
+//Except: Field numbers 19,000 to 19,999 are reserved for the Protocol Buffers implementation
+message HelloRequest {
+  string name = 1;  //This number is a unique number between 1 and 536,870,911
+  int32 week = 2;   //This number is a unique number between 1 and 536,870,911
+  //lab
+  string day = 3;
+}
+
+// The response message containing the greetings (also with unique field number)
+message HelloReply {
+  string message = 1;
+}
+
+service Fareweller {
+  // Sends a greeting
+  rpc SayBye (SayGoodBye) returns (GoodByeReply) {}
+
+}
+
+// The goodbye message response
+// lab 
+message SayGoodBye {
+  string first_name = 1;
+  string last_name = 2; 
+}
+
+// The goodbye message reply
+// lab 
+message GoodByeReply {
+  string message = 1;
+}

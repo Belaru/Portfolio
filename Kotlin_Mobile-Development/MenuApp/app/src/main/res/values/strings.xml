@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">A1 Menu App</string>
+    <string name="menu_header">Menu</string>
+    <string name="app_icon_description">Thai Restaurant App</string>
+    <string name="add_btn_content">+</string>
+    <string name="remove_btn_content">-</string>
+    <string name="food_name_1">Spicy Shrimp Teriyaki</string>
+    <string name="food_name_2">Pad Thai</string>
+    <string name="food_name_3">Pad See Ew</string>
+    <string name="food_name_4">General Thai</string>
+    <string name="food_name_5">Thai Curry</string>
+    <string name="food_name_6">Ginger Shak-a-Bowl</string>
+    <string name="food_description_1">Spicy teriyaki sauce and moist perfectly cooked veggies and shrimp. Sweet/spicy mild Teriyaki.</string>
+    <string name="food_description_2">Stir-fried rice noodles with eggs, vegetables and tofu in a sauce of tamarind, fish, dried shrimp, garlic, red chilli pepper and sugar. Side condiments include red chilli pepper, lime wedges and peanuts.</string>
+    <string name="food_description_3">Stir fried noodles with Chinese broccoli, egg, and beef, cooked with soy sauce. Salty, balanced with a touch of sour and a wonderful chargrilled flavour.</string>
+    <string name="food_description_4">Signature pieces of our battered chicken tossed in a sweet and spicy sriracha-based sauce with peppers, onions, and carrots. Served on steamed rice.</string>
+    <string name="food_description_5">Curry paste and coconut milk curry served with seafood, vegetables and herbs on rice. Topped with basil leaves  and chopped red chili pepper for extra flavor.</string>
+    <string name="food_description_6">Fish served with fresh veggies and vermicelli noodles topped with our ginger stir fry flavour and Peanut-Thairacha sauce.</string>
+    <string name="food_id_1">SHRIMPTER</string>
+    <string name="food_id_2">PADTHAI</string>
+    <string name="food_id_3">PSEEEW</string>
+    <string name="food_id_4">GENTHAI</string>
+    <string name="food_id_5">TCURRY</string>
+    <string name="food_id_6">GINGSHAKB</string>
+</resources>

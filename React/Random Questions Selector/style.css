@@ -1,0 +1,36 @@
+.child {
+    border: 2px solid;
+    margin: 10px;
+  }
+  
+  .error {
+    color: red;
+    font-size: smaller;  
+    font-style: italic;    
+  }
+
+  main{
+    display: flex;
+    flex-direction: column;
+    padding: 5% 10%;
+  }
+
+  .container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .space{
+    border: 1px solid black;
+    min-height: 20em;
+    width: 35em;
+  }
+
+  .question {
+    border: 1px solid gray;
+    margin: 2%;
+    padding: 5%;
+    font-size: 1.4em;
+  }
+
+  

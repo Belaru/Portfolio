@@ -1,0 +1,39 @@
+.story {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #F2F3F2;
+}
+
+.story-info {
+  background-color: #F2F3F2;
+  margin: 3em 1em 2em 1em;
+  border-top: solid #C49A6C 7px;
+  border-bottom: solid #C49A6C 7px;
+  width: 20em;
+  max-height: 30em;
+  overflow-y: scroll;
+  text-align: left;
+  color: #2B3990;
+}
+
+.story-info p {
+  margin-left: 1em;
+  margin-right: 1em;
+}
+
+/* #statistic-info {
+  line-height: 2em;
+} */
+
+/* hide scrollbar but allow scrolling */
+.story-info {
+  -ms-overflow-style: none; /* for Internet Explorer, Edge */
+  scrollbar-width: none; /* for Firefox */
+  overflow-y: scroll;
+}
+
+.story-info::-webkit-scrollbar {
+  display: none; /* for Chrome, Safari, and Opera */
+}

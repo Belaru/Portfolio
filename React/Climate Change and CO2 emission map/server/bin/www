@@ -1,0 +1,35 @@
+#!/usr/bin/env node
+const app = require('../app.js');
+const DB = require('../db/db.js');
+const port = 3085;
+
+
+/**
+ * Entry point for running a Node.js server.
+ * Initializes the server, connects to a MongoDB database, and handles server shutdown.
+ *
+ * @requires app - The main application module.
+ * @requires DB - The database connection manager module.
+ */
+(async () => {
+  let db;
+  try {
+    db = new DB();
+    await db.connect('Cluster0', 'country_temperatureChanges_co2');
+  } catch (e) {
+    console.error('WWW : could not connect ' + e);
+    process.exit();
+  }
+
+  const server = app.listen(port, () => {
+    console.log(`Server listening on port ${port}!`);
+  });
+
+  process.on('SIGINT', async () => {
+    await db.close();
+    server.close(() => {
+      console.log('Express server closed.');
+      process.exit(0);
+    });
+  });
+})();

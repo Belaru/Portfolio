@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{%block content%}
+<h2>Addresses</h2>
+<p id="to-form"><a href="#new_address">go to form</a></p>
+<ul>
+    {%for address in addresses%}
+        <li><a href="{{url_for('get_address',name=address.name)}}">
+            {{address.name}}</a></li>
+    {%endfor%}
+    <form id="new_address" method="POST">
+        {{form.csrf_token}}
+        {{ form.name.label }}
+        {{ form.name() }}
+        {{ form.street.label }}
+        {{ form.street() }}
+        {{ form.city.label }}
+        {{ form.city() }}
+        {{ form.province.label }}
+        {{ form.province() }}
+        <input id="button" type="submit" />
+    </form>
+</ul>
+{%endblock%}

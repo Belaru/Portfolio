@@ -1,0 +1,10 @@
+DROP TABLE FLASK_ADDRESSES;
+CREATE TABLE FLASK_ADDRESSES(
+    name VARCHAR2(20) PRIMARY KEY,
+    street VARCHAR2(30),
+    city VARCHAR2(20),
+    province VARCHAR2(20)
+);
+INSERT INTO FLASK_ADDRESSES VALUES('Sushies','Catherine', 'Westmount', 'Quebec');
+INSERT INTO FLASK_ADDRESSES VALUES('Tacos','Claude','Laval','Quebec');
+COMMIT;

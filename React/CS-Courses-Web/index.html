@@ -1,0 +1,105 @@
+<!doctype html>
+<html class="no-js" lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- The onload attribute is used to change the relationship from preload to stylesheet
+         once the resource has been loaded. -->
+
+    <!-- Fonts -->
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Noto+Sans&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Lora&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="https://fonts.googleapis.com/css?family=Permanent+Marker&display=swap" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+    <!-- Stylesheets -->
+    <link rel="preload" href="css/index.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/style.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+    <link rel="preload" href="css/cards.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+
+
+  
+    <!-- Favicon and Icons -->
+    <link rel="icon" href="/favicon.ico" sizes="any">
+    <link rel="icon" href="/icon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="icon.png">
+  
+    <!-- Web App Manifest -->
+    <link rel="manifest" href="site.webmanifest">
+  
+    <!-- Page Title and Description -->
+    <title>Dawson Computer Science</title>
+    <meta name="description" content="Dawson College Computer Science Technology Program">
+
+    <script src="js/app.js" type="module" defer></script>
+</head>
+
+<body>
+
+  <main id="main">
+        
+    <div id="banner-holder">
+        <!-- Placeholder with aspect ratio -->
+        <div class="image-placeholder"></div>
+
+        <!-- Actual image with width and height attributes -->
+        <img
+            alt="Dawson"
+            id="banner"
+            width="100%"
+            height="40%"
+            loading="lazy" 
+        />
+    </div>
+    <header class="bar">
+        <h1>Dawson College Computer Science Technology</h1>
+        <h2>all about our courses</h2>
+    </header>
+    <section class="info">
+        <blockquote>The Computer Science Technology Program is a three-year technical program that prepares students to work as entry-level software developers. A software developer, both individually and as a member of a team, conceives, designs and tests the
+            logic for solving problems with a program. They write, test, debug, deploy and maintain the software applications. </blockquote>
+
+        <p>
+            Some examples of jobs Computer Science Technology Program graduates fill in industry are:
+            <ul>
+                <li>Full-stack Web programming</li>
+                <li>Mobile device programming</li>
+                <li>Database programming</li>
+                <li>Quality assurance specialist</li>
+                <li>Software support specialist</li>
+            </ul>
+        </p>
+    </section>
+    <div id="snap-target">
+    <div id="sticky-container">
+    <section id="card-header">
+        <h3 id="total-courses-info"></h3>
+        <label>Sort: <select name="sort_order">
+            <option value="semester"> Semester </option>
+            <option value="number"> Course Number </option>
+            <option value="name"> Name </option>
+        </select>
+    </label>
+    <label>Filter: <select name="sort_semester">
+        <option value="none" selected> None </option>
+        <option value="1st semester"> Semester 1</option>
+        <option value="2nd semester"> Semester 2 </option>
+        <option value="3rd semester"> Semester 3 </option>
+        <option value="4th semester"> Semester 4 </option>
+        <option value="5th semester"> Semester 5 </option>
+        <option value="6th semester"> Semester 6 </option>
+    </select>
+    </label>
+    </section>
+    </div>
+    </div>
+    <section class="card-container">
+
+    </section>
+    <hr>
+    <footer>Dawson College is a Cégep in Montreal, Canada</footer>
+  </main>
+</body>
+
+</html>

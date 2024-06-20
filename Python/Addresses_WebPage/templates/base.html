@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{{title}}</title>
+        <link rel="stylesheet" href="{{url_for('static',filename="style.css")}}" />
+    </head>
+    <body>
+        <div>
+            {%block content%}{%endblock%}
+        </div>
+        <section id ="error-report">
+            {%for message in get_flashed_messages()%}
+                <div class="flash"> {{message}} </div>
+            {%endfor%}
+        </section>
+    </body>
+</html>

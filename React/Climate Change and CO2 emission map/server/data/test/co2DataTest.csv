@@ -1,0 +1,6 @@
+country,year,ISO3 ,gas_co2,share_global_gas_co2,dataset
+Afghanistan,1967,AFG,0.26,0.018,co2
+Afghanistan,1968,AFG,0.347,0.022,co2
+Afghanistan,1969,AFG,0,0,co2
+Afghanistan,1970,AFG,0.217,0.012,co2
+Afghanistan,1971,AFG,0.44,0.023,co2

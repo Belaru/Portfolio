@@ -1,0 +1,60 @@
+.leaflet-container {
+  height: 100%;
+  flex: 2;
+}
+
+.ui-container {
+  height: 100%;
+  width: 100%;
+  display: flex;
+}
+
+@media (orientation: portrait) {
+  .ui-container {
+    flex-direction: column;
+  }
+  .leaflet-container {
+    width: 100%;
+  }
+}
+
+.ui-controls {
+  flex: 1;
+}
+
+#coordinates-question{
+  display: flex;
+  flex-direction: column;
+}
+
+#coordinates-question div{
+  margin-top: 5%;
+  font-size: 1.3em;
+}
+
+#coordinates-question h2{
+  font-size: 2em;
+}
+
+#pannel-mode-controls{
+  display: flex;
+  flex-direction: row;
+  margin: 10% 0;
+  justify-content: space-evenly;
+  font-size: 1.2em;
+}
+
+#score-diplay{
+  font-size: 1.2em;
+  color: rgb(25, 10, 71);
+}
+
+.quiz-btn{
+  font-size: 1em;
+  margin: 4% 3%;
+  padding: 1%;
+}
+
+.quiz-btn :hover{
+  background-color: rgb(227, 175, 79);
+}

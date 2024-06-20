@@ -1,0 +1,49 @@
+code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.ui-controls h1 {
+    margin: 0.5em;
+    }
+
+#statistic-info {
+    line-height: 2em;
+  }
+
+.data-src:hover,
+#mentions a:hover {
+    background-color: #C49A6C;
+  }
+
+.chart-div {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
+  
+.chart-div h3{
+    color: #374396;
+    width:fit-content;
+    margin: auto;
+  }
+  
+.chart {
+    width: 100%;
+    height: max-content;
+  }
+  
+.custom-tooltip {
+    background-color: #ffffff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+    
+.label {
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+    
+.desc {
+    color: #888;
+}
